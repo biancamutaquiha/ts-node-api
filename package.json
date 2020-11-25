@@ -5,7 +5,11 @@
   "repository": "https://github.com/biancamutaquiha/ts-node-api.git",
   "author": "Bianca Ferreira <bianca.ferreira@m4u.com.br>",
   "license": "MIT",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpileOnly --ignore-watch node_modules src/server.ts"
+  },
   "devDependencies": {
+    "ts-node-dev": "^1.0.0",
     "typescript": "^4.1.2"
   }
 }
