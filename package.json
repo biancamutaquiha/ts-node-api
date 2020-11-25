@@ -6,13 +6,21 @@
   "author": "Bianca Ferreira <bianca.ferreira@m4u.com.br>",
   "license": "MIT",
   "scripts": {
+    "start": "node dist/server.js",
+    "build": "babel src --extensions \".js,.ts\" --out-dir dist --copy-files --no-copy-ignored",
     "dev": "ts-node-dev --respawn --ignore-watch node_modules src/server.ts",
     "test": "jest"
   },
   "devDependencies": {
+    "@babel/cli": "^7.12.8",
+    "@babel/core": "^7.12.9",
+    "@babel/node": "^7.12.6",
+    "@babel/preset-env": "^7.12.7",
+    "@babel/preset-typescript": "^7.12.7",
     "@types/jest": "^26.0.15",
     "@typescript-eslint/eslint-plugin": "^4.8.2",
     "@typescript-eslint/parser": "^4.8.2",
+    "babel-plugin-module-resolver": "^4.0.0",
     "eslint": "^7.14.0",
     "eslint-config-google": "^0.14.0",
     "eslint-plugin-import": "^2.22.1",
